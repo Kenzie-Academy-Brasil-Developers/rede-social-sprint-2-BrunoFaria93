@@ -14,19 +14,34 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 **** PÁGINA INICIAL
 */
 
+/* RESET */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+    list-style: none;
+	box-sizing: border-box;
+}
+
+
 /* VARIÁVEIS */
 :root{
   
 }
 
 /*BODY*/
-body{
-
+body{	
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	color: #262626;
 }
 
 /*TOPO*/
 header{
-	
+	margin-left: 25%;
+    padding: 15px 0px;
 }
 
 /*RODAPÉ*/
@@ -36,16 +51,118 @@ footer{
 
 /*PÁGINA INICIAL*/
 main{
-	
+	max-width: 935px;
+	margin-left: auto;
+	margin-right: auto;
 }
 	main .profile-content{
-
+		padding: 10px 70px;
 	}
 
 	main .highlighted-stories{
-
+		text-align: center;
+		border: solid 1px;
+		border-top: rgb(238, 238, 238);
+		border-inline-style: initial;
+	}
+	.highlighted-stories ul{
+		display: flex;
+		width: 100%;
+		padding: 25px 50px;
+	}
+	.highlighted-stories li{
+		margin-right: 40px;
+	}
+	.add-new-highlight img{
+		height: 77px;
+		width: 77px;
+		border-radius: 100%;
+		border: solid lightgray 5px;
+		border-style: double;
+		padding: 5px 5px;
+	
+	}
+	.highlight_story img{
+		height: 77px;
+		width: 77px;
+		border-radius: 100%;
+		border: solid lightgray 5px;
+		border-style: double;
 	}
 
-	main .profile-posts{
+	article{
+		display: flex;
+	}
+	.profile-photo figure img{
+		border-radius: 50%;
+		border: solid lightgray 5px;
+		border-style: double;
+	}
+	.profile-info{
+		margin-left: 10%;
+		font-family: 'Helvetica', 'Arial', sans-serif;
+		color: #262626;
+	}
+	.profile-info h1{
+		font-size: 25px;
+		margin-bottom: 0px;
+		margin-bottom: 1.4%;
+	}
+	.profile-info h2{
+		font-weight: bold;	
+	}
+	.profile-info p{
+		padding: 5px 0px;
+	}
+	.profile-info a{
+		padding: 5px 0px;
+	}
+	
+	.profile-info div{
+		display: flex;
+	}
+	.profile-data{
 
+	}
+	.profile-data span{
+		font-weight: bold;	
+	}
+	.profile-data p{
+		margin-top: 5px;
+		padding: 0px 30px;
+		padding-left: 0;
+	}
+	.profile-posts ul{
+		padding: 20px 0px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-height: 878px;
+		
+	}
+	.profile-posts li{
+		padding: 15px 0px;
+	}
+	.profile-posts li img{
+
+	}
+	nav{
+		text-align: center;
+		padding: 5px 0px;
+		font-weight: bold;
+	}
+	nav a {
+		font-family: 'Helvetica';
+		padding: 0px 30px;
+		color: inherit;
+		text-decoration: none;
+	}
+	.profile-posts nav a{
+		padding: 0px 35px;
+	}
+	
+	.profile-posts img {
+		height: 293px;
+		width: 293px;
+		
 	}
